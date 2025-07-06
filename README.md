@@ -1,13 +1,13 @@
-# ⚡️Rzl Laravel Blade HTML Minifier 🚀
+# ⚡️Rzl Laravel Blade Minifier 🚀
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rzl-app/laravel-html-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-html-minify)
-[![Total Downloads](https://img.shields.io/packagist/dt/rzl-app/laravel-html-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-html-minify)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/rzl-app/laravel-blade-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-blade-minify)
+[![Total Downloads](https://img.shields.io/packagist/dt/rzl-app/laravel-blade-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-blade-minify)
 [![PHPStan](https://img.shields.io/badge/phpstan-level%208-brightgreen?style=flat-rounded)](https://phpstan.org)
 [![PHP](https://img.shields.io/badge/PHP-^8.2-blue?style=flat-rounded)](https://www.php.net)
 [![Laravel](https://img.shields.io/badge/Laravel-^10.x%20|%20^11.x%20|%20^12.x-red?style=flat-rounded)](https://laravel.com)
 [![Illuminate Support](https://img.shields.io/badge/illuminate%2Fsupport-^10.x%20|%20^11.x%20|%20^12.x-blue?style=flat-rounded)](https://laravel.com/docs)
 
-> 🚀 **Automatically minifies your Laravel Blade HTML output for smaller pages & blazing-fast load times.**
+> 🚀 **Automatically minifies your Laravel Blade output for smaller pages & blazing-fast load times.**
 >
 > 🛠 **Supports:**
 >
@@ -47,10 +47,10 @@
 You can install the package via composer:
 
 ```bash
-composer require rzl-app/laravel-html-minify
+composer require rzl-app/laravel-blade-minify
 ```
 
-## Sponsor Rzl Laravel HTML Minifier on GitHub
+## Sponsor Rzl Laravel Blade Minifier on GitHub
 
 [Become a sponsor to Rzl App
 ](https://github.com/sponsors/rzl-app).
@@ -62,7 +62,7 @@ composer require rzl-app/laravel-html-minify
 ### Publish config
 
 ```php
-php artisan vendor:publish --tag=RzlLaravelHtmlMinify
+php artisan vendor:publish --tag=RzlLaravelBladeMinify
 ```
 
 ### Add middleware to web middleware group within app/Http/Kernel.php
@@ -108,16 +108,16 @@ RZL_MINIFY_ONLY_PROD=false
 ]
 ```
 
-### Minify a particular HTML string manually
+### Minify a particular Blade string manually
 
 ```php
-RzlBladeMinifyFacade::htmlMinify("<div>...</div>");
+RzlBladeMinifyFacade::bladeMinify("<div>...</div>");
 ```
 
-### Ignoring minify a particular HTML string manually
+### Ignoring minify a particular Blade string manually
 
 ```php
-RzlBladeMinifyFacade::excludeHtmlMinify("<div>...</div>");
+RzlBladeMinifyFacade::excludeBladeMinify("<div>...</div>");
 ```
 
 ### Ignore minify in Blade

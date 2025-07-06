@@ -19,7 +19,7 @@
   "config": {
     "sort-packages": true
   },
-  "description": "A Laravel package to seamlessly minify Blade View HTML output, enhancing page speed and overall user experience.",
+  "description": "A Laravel package to seamlessly minify Blade HTML output for faster pages and a better user experience.",
   "extra": {
     "laravel": {
       "providers": [

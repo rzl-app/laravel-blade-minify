@@ -15,7 +15,7 @@ class RzlBladeMinifyServiceProvider extends ServiceProvider
     if ($this->app->runningInConsole()) {
       $this->publishes([
         __DIR__ . '/../config/config.php' => config_path('rzl-blade-minify.php'),
-      ], 'RzlLaravelHtmlMinify');
+      ], 'RzlLaravelBladeMinify');
     }
   }
 
@@ -32,9 +32,9 @@ class RzlBladeMinifyServiceProvider extends ServiceProvider
       return new RzlBladeMinifyFacade;
     });
 
-    $this->app['router']->middleware('RzlLaravelHtmlMinify', 'RzlApp\BladeMinify\Middleware\RzlBladeMinify');
+    $this->app['router']->middleware('RzlLaravelBladeMinify', 'RzlApp\BladeMinify\Middleware\RzlBladeMinify');
 
-    $this->app['router']->aliasMiddleware('RzlLaravelHtmlMinify', \RzlApp\BladeMinify\Middleware\RzlBladeMinify::class);
+    $this->app['router']->aliasMiddleware('RzlLaravelBladeMinify', \RzlApp\BladeMinify\Middleware\RzlBladeMinify::class);
     $this->app['router']->pushMiddlewareToGroup('web', \RzlApp\BladeMinify\Middleware\RzlBladeMinify::class);
   }
 }
