@@ -50,7 +50,7 @@ You can install the package via composer:
 composer require rzl-app/laravel-html-minify
 ```
 
-## Sponsor Laravel HTML Minifier on GitHub
+## Sponsor Rzl Laravel HTML Minifier on GitHub
 
 [Become a sponsor to Rzl App
 ](https://github.com/sponsors/rzl-app).
