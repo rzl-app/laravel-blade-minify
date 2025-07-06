@@ -43,7 +43,7 @@
   ],
   "license": "MIT",
   "minimum-stability": "stable",
-  "name": "rzl-app/laravel-html-minify",
+  "name": "rzl-app/laravel-blade-minify",
   "require": {
     "illuminate/support": "^10.0|^11.0|^12.0",
     "laravel/framework": "^10.0|^11.0|^12.0",
