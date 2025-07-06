@@ -84,7 +84,12 @@ class RzlBladeMinify
       $html = str_replace("%%%EXCL_$index%%%", $exclude, $html);
     }
 
-    return self::clearingCommentExcluded($html);
+    return $this->clearingCommentExcluded($html);
+  }
+
+  public function minifierBladeDisabled(?string $html): string
+  {
+    return $this->clearingCommentExcludedAtDisable($html);
   }
 
   private function clearingCommentExcluded($input)
@@ -110,5 +115,15 @@ class RzlBladeMinify
     ];
 
     return str($input)->replaceMatches($search, $replace);
+  }
+
+
+  private function clearingCommentExcludedAtDisable($input)
+  {
+    return str_replace(
+      [IgnoreMinifyBladeCompiler::IGNORE_START, IgnoreMinifyBladeCompiler::IGNORE_END],
+      '',
+      $input
+    );
   }
 }

@@ -1,8 +1,8 @@
 # ⚡️Rzl Laravel HTML Minifier 🚀
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rzl-app/laravel-html-minify.svg?style=flat-square)](https://packagist.org/packages/rzl-app/laravel-html-minify)
-[![Total Downloads](https://img.shields.io/packagist/dt/rzl-app/laravel-html-minify.svg?style=flat-square)](https://packagist.org/packages/rzl-app/laravel-html-minify)
-[![PHPStan](https://img.shields.io/badge/phpstan-level%208-brightgreen?style=flat-square)](https://phpstan.org)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/rzl-app/laravel-html-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-html-minify)
+[![Total Downloads](https://img.shields.io/packagist/dt/rzl-app/laravel-html-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-html-minify)
+[![PHPStan](https://img.shields.io/badge/phpstan-level%208-brightgreen?style=flat-rounded)](https://phpstan.org)
 
 > This package helps to minify your project`s html (blade file) render output.  
 > **Built with ❤️ by [@rzl-app](https://github.com/rzl-app).**
@@ -53,20 +53,33 @@ php artisan vendor:publish --tag=RzlLaravelHtmlMinify
 ### For enable in env
 
 ```php
-MINIFY_ENABLED=true
+RZL_MINIFY_ENABLE=true
 ```
 
 ### For disable in env
 
 ```php
-MINIFY_ENABLED=false
+RZL_MINIFY_ENABLE=false
 ```
 
-### Excluding route name for from minify update config
+### For running only at production mode app env
 
 ```php
-'exclude_route' => [
-        // 'routeName'
+RZL_MINIFY_ONLY_PROD=true
+```
+
+### For running at all mode app env
+
+```php
+RZL_MINIFY_ONLY_PROD=false
+```
+
+### Ignoring list route name from minifying render output
+
+```php
+'ignore_route_name' => [
+  // 'dashboard',
+  // 'home',
 ]
 ```
 

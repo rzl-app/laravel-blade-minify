@@ -31,6 +31,15 @@ class RzlBladeMinifyFacade extends Facade
    * @param $html
    * @return string
    */
+  public static function bladeMinifyDisable(?string $html = NULL): string
+  {
+    return (new RzlBladeMinify())->minifierBladeDisabled((string) $html);
+  }
+
+  /**
+   * @param $html
+   * @return string
+   */
   public static function excludeHtmlMinify(?string $html = NULL): string
   {
     return IgnoreMinifyBladeCompiler::IGNORE_START . (string) $html . IgnoreMinifyBladeCompiler::IGNORE_END;

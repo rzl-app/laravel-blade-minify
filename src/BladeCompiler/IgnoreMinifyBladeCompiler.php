@@ -8,8 +8,8 @@ class IgnoreMinifyBladeCompiler extends BladeCompiler
 {
 
   protected $openExcludeMinifyCount = 0;
-  public const IGNORE_START = '<!--STARTED_IGNORE-->';
-  public const IGNORE_END   = '<!--ENDED_IGNORE-->';
+  public const IGNORE_START = '<!--STARTED_IGNORE_RZL_BLADE_MINIFY-->';
+  public const IGNORE_END   = '<!--ENDED_IGNORE_RZL_BLADE_MINIFY-->';
 
   public function compileString($value)
   {
