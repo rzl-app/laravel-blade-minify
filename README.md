@@ -62,13 +62,13 @@ RZL_MINIFY_ENABLE=true
 RZL_MINIFY_ENABLE=false
 ```
 
-### For running only at production mode app env
+### For minifying only at production mode app env
 
 ```php
 RZL_MINIFY_ONLY_PROD=true
 ```
 
-### For running at all mode app env
+### For minifying at all mode app env
 
 ```php
 RZL_MINIFY_ONLY_PROD=false
