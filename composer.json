@@ -19,7 +19,7 @@
   "config": {
     "sort-packages": true
   },
-  "description": "laravel minify blade output",
+  "description": "A Laravel package to seamlessly minify Blade View HTML output, enhancing page speed and overall user experience.",
   "extra": {
     "laravel": {
       "providers": [
@@ -34,7 +34,12 @@
     "html-minify",
     "blade-minify",
     "laravel-minify",
-    "laravel-blade-minify"
+    "laravel-blade-minify",
+    "laravel",
+    "blade",
+    "minify",
+    "html",
+    "performance"
   ],
   "license": "MIT",
   "minimum-stability": "stable",

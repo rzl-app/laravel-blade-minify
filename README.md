@@ -4,8 +4,10 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/rzl-app/laravel-html-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-html-minify)
 [![PHPStan](https://img.shields.io/badge/phpstan-level%208-brightgreen?style=flat-rounded)](https://phpstan.org)
 
-> This package helps to minify your project`s html (blade file) render output.  
+> This package helps to minify your project`s html (blade file) render output.
 > **Built with ❤️ by [@rzl-app](https://github.com/rzl-app).**
+> 🚀 **Minify your Laravel Blade HTML output automatically for smaller pages & faster load times.**  
+> Built with ❤️ by [@rzl-app](https://github.com/rzl-app)
 
 ---
 
@@ -50,31 +52,31 @@ php artisan vendor:publish --tag=RzlLaravelHtmlMinify
 
 ## 🚀 Usage
 
-### For enable in env
+### Enable in .env
 
 ```php
 RZL_MINIFY_ENABLE=true
 ```
 
-### For disable in env
+### Disable in .env
 
 ```php
 RZL_MINIFY_ENABLE=false
 ```
 
-### For minifying only at production mode app env
+### Minify only in production
 
 ```php
 RZL_MINIFY_ONLY_PROD=true
 ```
 
-### For minifying at all mode app env
+### Minify at all mode APP Env
 
 ```php
 RZL_MINIFY_ONLY_PROD=false
 ```
 
-### Ignoring list route name from minifying render output
+### Ignore specific route names from minifying render output
 
 ```php
 'ignore_route_name' => [
@@ -83,19 +85,19 @@ RZL_MINIFY_ONLY_PROD=false
 ]
 ```
 
-### Minify particular html part
+### Minify a particular HTML string manually
 
 ```php
 RzlBladeMinifyFacade::htmlMinify("<div>...</div>");
 ```
 
-### Ignoring minify particular html part
+### Ignoring minify a particular HTML string manually
 
 ```php
 RzlBladeMinifyFacade::excludeHtmlMinify("<div>...</div>");
 ```
 
-### Ignoring html minify in blade directory
+### Ignore minify in Blade
 
 ```php
 @ignoreMinify
