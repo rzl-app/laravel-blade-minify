@@ -1,4 +1,4 @@
-# ⚡️Rzl Laravel HTML Minifier 🚀
+# ⚡️Rzl Laravel Blade HTML Minifier 🚀
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/rzl-app/laravel-html-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-html-minify)
 [![Total Downloads](https://img.shields.io/packagist/dt/rzl-app/laravel-html-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-html-minify)
