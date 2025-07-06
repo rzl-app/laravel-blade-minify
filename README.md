@@ -4,10 +4,8 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/rzl-app/laravel-html-minify.svg?style=flat-rounded)](https://packagist.org/packages/rzl-app/laravel-html-minify)
 [![PHPStan](https://img.shields.io/badge/phpstan-level%208-brightgreen?style=flat-rounded)](https://phpstan.org)
 
-> This package helps to minify your project`s html (blade file) render output.
-> **Built with ❤️ by [@rzl-app](https://github.com/rzl-app).**
 > 🚀 **Minify your Laravel Blade HTML output automatically for smaller pages & faster load times.**  
-> Built with ❤️ by [@rzl-app](https://github.com/rzl-app)
+> **Built with ❤️ by [@rzl-app](https://github.com/rzl-app).**
 
 ---
 
@@ -70,7 +68,7 @@ RZL_MINIFY_ENABLE=false
 RZL_MINIFY_ONLY_PROD=true
 ```
 
-### Minify at all mode APP Env
+### Minify at all mode APP Env (default)
 
 ```php
 RZL_MINIFY_ONLY_PROD=false
@@ -103,12 +101,6 @@ RzlBladeMinifyFacade::excludeHtmlMinify("<div>...</div>");
 @ignoreMinify
     <div> this script will ignored from minify   </div>
 @endIgnoreMinify
-```
-
-### Testing
-
-```bash
-composer test
 ```
 
 ---
