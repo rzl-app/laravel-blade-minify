@@ -24,7 +24,8 @@
     "laravel": {
       "providers": [
         "RzlApp\\BladeMinify\\Providers\\RzlBladeMinifyServiceProvider",
-        "RzlApp\\BladeMinify\\Providers\\RzlIgnoreMinifyBladeServiceProvider"
+        "RzlApp\\BladeMinify\\Providers\\RzlIgnoreMinifyBladeServiceProvider",
+        "RzlApp\\BladeMinify\\Providers\\ViteCustomProvider"
       ]
     }
   },
