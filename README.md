@@ -123,9 +123,36 @@ RzlBladeMinifyFacade::excludeBladeMinify("<div>...</div>");
 ### Ignore minify in Blade
 
 ```php
+{{-- Blade directive to ignore minify --}}
+
 @ignoreMinify
-    <div> this script will ignored from minify   </div>
+  <div> this script will ignored from minify   </div>
 @endIgnoreMinify
+
+```
+
+### Working with vite directive
+
+At dev mode you can do:
+
+```php
+{{-- Blade directive to ignore minify vite directive --}}
+
+@ignoreMinify
+  @viteReactRefresh
+@endIgnoreMinify
+```
+
+or:
+
+```php
+{{-- Blade directive to ignore minify vite directive --}}
+// add to your providers.php
+
+return [
+  RzlApp\BladeMinify\Providers\ViteCustomProvider::class,
+  // .... other you provider class...
+];
 ```
 
 ---
