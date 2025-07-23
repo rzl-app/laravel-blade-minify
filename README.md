@@ -143,11 +143,10 @@ At dev mode you can do:
 @endIgnoreMinify
 ```
 
-or:
+Or add to your providers.php:
 
 ```php
-{{-- Blade directive to ignore minify vite directive --}}
-// add to your providers.php
+// bootstrap/providers.php
 
 return [
   RzlApp\BladeMinify\Providers\ViteCustomProvider::class,
